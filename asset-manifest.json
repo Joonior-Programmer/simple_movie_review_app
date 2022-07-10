@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple_movie_review_app/static/css/main.41bbd116.css",
+    "main.js": "/simple_movie_review_app/static/js/main.f08b85b7.js",
+    "index.html": "/simple_movie_review_app/index.html",
+    "main.41bbd116.css.map": "/simple_movie_review_app/static/css/main.41bbd116.css.map",
+    "main.f08b85b7.js.map": "/simple_movie_review_app/static/js/main.f08b85b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41bbd116.css",
+    "static/js/main.f08b85b7.js"
+  ]
+}
