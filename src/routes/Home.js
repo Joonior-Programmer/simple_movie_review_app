@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
+import styles from "./Home.module.css";
 
 function Home() {
   const [movies, setMovies] = useState([]);
@@ -15,10 +16,10 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <ul>
+    <div className={styles.container}>
+      <ul className={styles.movieList}>
         {movies.map((movie) => (
-          <li key={movie.id}>
+          <li key={movie.id} className={styles.li}>
             <MovieList
               title={movie.title_long}
               genres={movie.genres}

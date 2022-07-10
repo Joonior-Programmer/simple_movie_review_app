@@ -1,18 +1,26 @@
+import styles from "./MovieList.module.css";
+
 function MovieList({ title, genres, cover, summary, rating }) {
   console.log(cover);
   return (
-    <div>
-      <img src={cover} />
+    <div className={styles.container}>
+      <img src={cover} alt={title} />
       <h3>{title}</h3>
       <span>{summary}</span>
-      <ul>
+
+      <ul className={styles.ul}>
+        <p className={styles.li}>Genre</p>
         {genres.map((genre) => (
-          <li key={genre}>{genre}</li>
+          <li key={genre} className={styles.li}>
+            {genre}
+          </li>
         ))}
       </ul>
-      <span>
-        <strong>★{rating}</strong>
-      </span>
+      <div className={styles.rating}>
+        <span>
+          <strong>★{rating}</strong>
+        </span>
+      </div>
     </div>
   );
 }
